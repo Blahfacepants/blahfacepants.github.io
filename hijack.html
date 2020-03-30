@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<body style="background-color: black; color: green; font-family: 'Lucida Console';">
+    <h1 onclick="trigger()">Sequence complete. Click here to restore vision.</h1>
+    <audio id="hijack" onended="move()">
+        <source src="hijacksoldier.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="penult" onended="trigger2()">
+        <source src="pneultimate.mp3" type="audio/mpeg">
+    </audio>
+</body>
+
+
+<script>
+    function trigger(){
+        document.getElementById("penult").play();
+    }
+    function trigger2(){
+        document.getElementById("hijack").play();
+    }
+    function move(){
+        window.location.replace("outro.html");
+    }
+</script>

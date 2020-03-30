@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<body style="background-color: black;">
+    <img src="https://ak1.picdn.net/shutterstock/videos/1031476661/thumb/9.jpg" alt="SOUND ON" style="display: block; margin-left: auto; margin-right: auto;
+    width: 50%;" onclick="start()">
+    
+    <p style="color: green; font-family: 'Lucida Console';">click the audio img</p>
+    
+    <audio id="first" style="background-color: black;" onended="next()">
+        <source src="intro.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="next">
+        <source src="alleyfighter.mp3" type="audio/mpeg">
+    </audio>
+</body>
+
+<script>
+    function next(){
+        document.getElementById("next").play();
+    }
+    function start(){
+        document.getElementById("first").play();
+    }
+</script>
