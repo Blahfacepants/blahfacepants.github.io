@@ -72,12 +72,15 @@ function outrotype(){
 function handleInput(){
     var value = document.getElementById("passcode").value.toLowerCase();
     if(value=="gttsc"){
-      window.location.replace("calibtest.html")
+      window.location.replace("calibtest.html");
     }
     else if(value=="qx!iav"){
-      window.location.replace("anarchy.html")
+      window.location.replace("story.html");
     }
     else if(value=="the establishment must die"){
+      window.location.replace("anarchy.html");
+    }
+    else if(value=="anarchy"){
       outrotype();
     }
     else{
