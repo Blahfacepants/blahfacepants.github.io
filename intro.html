@@ -5,6 +5,10 @@
     
     <p style="color: green; font-family: 'Lucida Console';">click the audio img</p>
     
+    <audio id="intro" style="background-color: black;" onended="init()">
+        <source src="riot.mp3" type="audio/mpeg">
+    </audio>
+
     <audio id="first" style="background-color: black;" onended="next()">
         <source src="intro.mp3" type="audio/mpeg">
     </audio>
@@ -15,11 +19,14 @@
 </body>
 
 <script>
+    function init(){
+        document.getElementById("first").play();
+    }
     function next(){
         document.getElementById("next").play();
     }
     function start(){
-        document.getElementById("first").play();
+        document.getElementById("intro").play();
     }
     function redirect(){
         window.location.replace("index.html");
